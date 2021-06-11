@@ -1,0 +1,112 @@
+
+Basic
+
+1. Who is father of C Language?
+A. Dennis Ritchie
+B. Bjarne Stroustrup
+C. Dr. E.F. Codd
+D. James A. Gosling
+Answer : A
+
+2. C programs are converted into machine language with the help of 
+A. An Editor
+B. A compiler
+C. An operating system
+D. None of the above
+Answer : B
+
+3. A C variable cannot start with
+A. An alphabet
+B. A number
+C. A special symbol other than underscore
+D. both (b) and (c)
+Answer : D
+
+4. Which of the following is allowed in an Arithmetic instruction in C?
+A. []
+B. {}
+C. ()
+D. None of the above
+Answer : C
+
+5. What type of language is C?
+A. Object Oriented
+B. Procedural
+C. Object Based
+D. Recursive
+Answer : B
+
+
+Medium 
+
+1. Array elements are always stored in _________ memory locations.
+A. Sequential
+B. Random
+C. Sequential and Random
+D. None of the above
+Answer : A
+
+2. What is the right way to access value of struct book{ int price, page; }?
+A. printf(“%d%d”, book.price, book.page);
+B. printf(“%d%d”, price.book, page.book);
+C. printf(“%d%d”, price::book, page::book);
+D. printf(“%d%d”, price->book, page->book);
+Answer : A
+
+3. perror( ) function used to ?
+A. Work same as printf()
+B. prints the error message specified by the compiler
+C. prints the garbage value assigned by the compiler
+D. None of the above
+Answer : B
+
+4. A binary tree with 27 nodes has _______ null branches.
+A. 54
+B. 27
+C. 26
+D. None of the above
+Answer : D
+
+5. What will printf(“%d”, 10 ? 0 ? 5 : 1 : 12); print on screen?
+A. 10
+B. 0
+C. 12
+D. 1
+Answer : D
+
+Hard
+
+1. What will be the output of the following statement ? int a=10; printf(“%d &i”,a,10);
+a) error
+b) 10
+c) 10 10
+d) none of these
+Ans: d
+
+2. What will be the output of the following statement ? printf(“%X%x%ci%x”,11,10,’s’,12);
+a) error
+b) basc
+c) Bas94c
+d) none of these
+Ans: b
+
+3. What does this mean?= float (*var[5])();
+a) Variable 'var' is an array of pointer to function that returns a float.
+b) Compiler error. Illegal array of pointers declaration. 
+c) Variable 'var' is a pointer of array type float which is a function.
+d) Segmentation Fault. Core Dumped.
+Ans: a
+
+4. What will be the output of the following statement ? printf( 3 + “goodbye”);
+a) goodbye
+b) odbye
+c) bye
+d) dbye
+Ans: d
+
+5. What will be the output of the following statements ? long int a = scanf(“%ld%ld”,&a,&a); printf(“%ld”,a);
+a) error
+b) garbage value
+c) 0
+d) -1
+Ans: b
