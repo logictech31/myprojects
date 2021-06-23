@@ -22,25 +22,25 @@
 ## Author: hp <hp@hp-ThinkCentre-E73>
 ## Created: 2021-06-23
 
-function grad = gradientDescent (X, y, theta)
+function theta = gradientDescent (X, y, theta)
 m = size(X, 1);
 i = 1;
 % This is just a sample for gradient descent
 % you can adjust the value of 'i' as per your need
-  while i <= 3
+  while i <= 5
     % adjust alpha(Learning rate if J starts to increase)
     alpha = 0.0003;
     % prints the predictions
-    predictions = X * theta
+    predictions = X * theta;
     % now we find the squared mean error, i.e., the difference between the
     % predicted value and the actual value
     % we have squared it so that we don't get a -ve value
-    sqme = (predictions - y).^2*X(1);
+    sqme = (predictions - y);
     % prints the squared mean error
-    J = 1/m * sum(sqme)
-    theta = theta - alpha*J;
+    J = (1 / (2*m)) * sum(sqme)
+    grad = (1/m) * sum(sqme*X(i));
+    theta = theta - alpha*grad;
     % prints the value of new theta
-    theta
     i = i + 1;
 endwhile
 endfunction
